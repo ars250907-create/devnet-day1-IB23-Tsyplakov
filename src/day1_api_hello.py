@@ -6,6 +6,7 @@ import os
 import sys
 import time
 from datetime import datetime, timezone
+from typing import Tuple, List
 
 import requests
 
@@ -50,7 +51,7 @@ def load_json(path: str):
         return json.load(f)
 
 
-def validate_payload(payload: dict) -> tuple[bool, list[str]]:
+def validate_payload(payload: dict) -> Tuple[bool, List[str]]:
     errors = []
     for k, v in EXPECTED.items():
         if k not in payload:
