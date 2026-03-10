@@ -6,7 +6,7 @@ import os
 import sys
 import time
 from datetime import datetime, timezone
-from typing import Tuple, List
+from typing import Tuple, List, Dict
 
 import requests
 
@@ -61,7 +61,7 @@ def validate_payload(payload: dict) -> Tuple[bool, List[str]]:
     return (len(errors) == 0), errors
 
 
-def fetch_online(url: str, timeout: int = 10) -> tuple[int, dict]:
+def fetch_online(url: str, timeout: int = 10) -> Tuple[int, Dict]:
     r = requests.get(url, timeout=timeout)
     status = r.status_code
     payload = r.json()
@@ -70,7 +70,7 @@ def fetch_online(url: str, timeout: int = 10) -> tuple[int, dict]:
 
 def build_summary(student_token: str, student_name: str, student_group: str,
                   url: str, status_code: int, validation_passed: bool,
-                  validation_errors: list[str], response_sha256: str) -> dict:
+                  validation_errors: List[str], response_sha256: str) -> dict:
     return {
         "schema_version": SUMMARY_SCHEMA_VERSION,
         "generated_utc": datetime.now(timezone.utc).isoformat(),
