@@ -1,0 +1,4 @@
+2026-03-10T10:41:20.316146+00:00Z ONLINE mode: GET https://jsonplaceholder.typicode.com/todos/1
+2026-03-10T10:41:20.627728+00:00Z DONE status=200 validation=True
+2026-03-10T10:41:23.552531+00:00Z OFFLINE mode: loaded cached response.json
+2026-03-10T10:41:23.553082+00:00Z DONE status=200 validation=True
