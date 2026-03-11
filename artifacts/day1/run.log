@@ -2,3 +2,9 @@
 2026-03-10T10:41:20.627728+00:00Z DONE status=200 validation=True
 2026-03-10T10:41:23.552531+00:00Z OFFLINE mode: loaded cached response.json
 2026-03-10T10:41:23.553082+00:00Z DONE status=200 validation=True
+2026-03-10T10:58:47.389743+00:00Z ONLINE mode: GET https://jsonplaceholder.typicode.com/todos/1
+2026-03-10T10:58:47.703199+00:00Z DONE status=200 validation=True
+2026-03-10T10:59:26.241321+00:00Z OFFLINE mode: loaded cached response.json
+2026-03-10T10:59:26.241978+00:00Z DONE status=200 validation=True
+2026-03-11T14:29:44.304564+00:00Z OFFLINE mode: loaded cached response.json
+2026-03-11T14:29:44.305302+00:00Z DONE status=200 validation=True
